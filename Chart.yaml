@@ -1,0 +1,20 @@
+apiVersion: v1
+description: A Helm chart for Tectonic Fluentd based on https://coreos.com/tectonic/docs/latest/admin/logging.html
+name: helm-tectonic-fluentd
+version: 0.0.1
+sources:
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-service-account.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-role.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-role-binding.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-configmap.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-svc.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/fluentd-ds.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/monitoring/prometheus-fluentd-role-binding.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/monitoring/prometheus-fluentd-service-account.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/monitoring/prometheus-fluentd.yaml
+- https://coreos.com/tectonic/docs/latest/files/logging/monitoring/fluentd-prometheus-service-monitor.yaml:%
+maintainers:
+- name: treksler
+  email: treksler@ucalgary.ca
+  url: https://ucalgary.ca
+
