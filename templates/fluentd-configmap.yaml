@@ -159,7 +159,7 @@ data:
     <source>
       @type systemd
       pos_file /var/log/fluentd-journald-systemd.pos
-      read_from_head true
+      read_from_head false
       strip_underscores true
       tag systemd
     </source>
@@ -209,7 +209,7 @@ data:
       time_format %Y-%m-%dT%H:%M:%S.%NZ
       tag kubernetes.*
       format json
-      read_from_head true
+      read_from_head false
     </source>
 
   kubernetes-filter.conf: |
