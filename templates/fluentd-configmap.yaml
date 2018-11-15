@@ -283,9 +283,9 @@ data:
       include_tag_key true
       # Replace with the host/port to your Elasticsearch cluster.
       # This assumes a service `elasticsearch` exists in the default namespace
-      host elasticsearch.elasticsearch.svc.cluster.local
-      port 9200
-      scheme http
+      host {{ .Values.es.host }}
+      port {{ .Values.es.port }}
+      scheme {{ .Values.es.scheme }}
       ssl_verify false
 
       logstash_format true

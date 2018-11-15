@@ -1,0 +1,4 @@
+es:
+  host: elasticsearch
+  port: 9200
+  scheme: http
